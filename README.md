@@ -1,5 +1,10 @@
-# Labrinto-DFS
+# Resolver um labrinto pelo método de Busca por Profundeza(DFS)
 
+<div style="display: inline-block;">
+<img align="center" height="20px" width="60px" src="https://img.shields.io/badge/Language-C-blue"/> 
+<img align="center" height="20px" width="80px" src="https://img.shields.io/badge/Made%20in-VSCode-red"/> 
+</div>
+<br>
 <p align="justify">
 
 </p>
