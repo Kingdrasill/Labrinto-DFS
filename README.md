@@ -1,4 +1,4 @@
-# Resolver um labrinto pelo método de Busca em Profundidade(DFS)
+# Labrinto por Busca em Profundidade(DFS)
 
 <div style="display: inline-block;">
 <img align="center" height="20px" width="60px" src="https://img.shields.io/badge/Language-C-blue"/> 
