@@ -15,7 +15,7 @@ Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca
     <li>"." - Simboliza um caminho passável no labirinto.</li>
     <li>"#" - Simboliza uma parede no labirinto.</li>
   </ul>
-  E para um labirinto ser válido tem que exister pelo menos um caminho da entrada para o final. O labirinto a seguir é um labirinto 8x8 válido de exemplo, o caminho vermelho representa uma das formas de passar por ele:
+  E para um labirinto ser válido tem que exister pelo menos um caminho da entrada para o final. O labirinto a seguir é um labirinto 7x7 válido de exemplo, o caminho vermelho representa uma das formas de passar por ele:
 </p>
 <p align="center">
   <img src="imgs/labirinto.png" width="400px">
