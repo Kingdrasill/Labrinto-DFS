@@ -54,7 +54,7 @@ Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca
 </p>
 
 <p align="justify">
-  Exemplo do caminho tomado para concluir o labirinto de exemplo:
+  Conclusão do labirinto e sua pilha:
 </p>
 <p align="center">
   <img src="imgs/exemploresultado.png">
