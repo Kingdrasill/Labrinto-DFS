@@ -22,18 +22,18 @@ Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca
 </p>
 
 <p align="justify">
-  A estrutura pilha dinâmica será utilizada para guardar o caminho tomado da entrada para chegar na saída. A pilha dinâmica é uma variante do modelo de pilha estática, na pilha dinâmica a um ponteiro que a ponta para o topo da pilha e um ponteiro que aponta para o fundo da pilha e os dados possuem um valor e quem é o dado passado para chegar nele. A estrutura pode ser vista pela visualização gráfica abaixo:  
+  A estrutura pilha dinâmica será utilizada para guardar o caminho tomado da entrada para chegar na saída. A pilha dinâmica é uma variante do modelo de pilha estática, onde há um ponteiro que aponta para o topo da pilha, um ponteiro que aponta para o fundo da pilha e os dados que possuem um valor que é passado para chegar nele. A estrutura pode ser vista pela visualização gráfica abaixo:  
 </p>
 <p align="center">
   <img src="imgs/pilha.png">
 </p>
 
 <p align="justify">
-  Com as estruturas explicadas agora vamos entender como o método DFS funciona. Primeiro a posição inicial é adicionada a pilha, depois o algoritmo irá olhar se pode ir para baixo, direita, esquerda ou cima nesta ordem, após ter escolhido o caminho a ser tomado se poder ele vai adicionar as posições deste caminho na pilha até a posição que ele não poder mover na direção escoliha. Após isto o algoritmo vai pegar a posição do topo da pilha e verificar se a algum outro caminho para se mover nela se houver ele vai ir até o final dela senão ele retirar está posição da pilha e tendar com a que estava antes dele, assim por a diante até o topo ser a posição final. Os desenhos a seguir representam este processo.
+  Com as estruturas explicadas agora vamos entender como o método DFS funciona. Primeiro a posição inicial é adicionada a pilha, depois o algoritmo irá olhar se pode ir para baixo, direita, esquerda ou cima nesta ordem (Neste último caso, considerado como voltar). Após ter escolhido o caminho a ser tomado, O código vai adicionar as posições deste caminho na pilha até a posição que ele não poderá mover na direção escolhida. Após isto, o algoritmo vai pegar a posição do topo da pilha e verificar se há algum outro caminho para se mover nela, se houver, o mesmo vai caminhar até o final dela, senão, ele irá retirar está posição da pilha e tentar com a posição anterior, assim por a diante até o topo ser a posição final. Os desenhos a seguir representam este processo.
 </p>
 
 <p align="justify">
-  Verificação das posições ao redor para mover na direção, no exemplo o algoritmo primeira mente iriar para baixo, depois para direita, depois para esquerda e por último para cima:
+  Verificação das posições ao redor para mover na direção, no exemplo o algoritmo primeiramente irá para baixo, depois para direita, depois para esquerda e por último para cima:
 </p>
 <p align="center">
   <img src="imgs/mover.png">
