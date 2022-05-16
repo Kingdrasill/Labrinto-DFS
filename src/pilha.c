@@ -13,49 +13,29 @@ void PUSH(Pilha *P, Item D) {
 	P->T = aux;
 };
 
-void POP(Pilha *P, Item *D) {
+Item POP(Pilha *P) {
 	Bloco *tmp;
+	Item aux;
 	
 	if (P->T == P->F) {
 		printf("Vazia!");
-		D = NULL;
+		aux.x = -1;
+		aux.y = -1;
 	} else {
 		tmp = P->T; 
-		*D = P->T->dado;
+		aux = P->T->dado;
 		P->T = P->T->ant;
 		free(tmp);
 	}
-};
 
-void Remove(Pilha *P, int idx) {
-	Pilha aux;
-	Bloco *P2;
-	Item tmp;
-	FPVazia(&aux);
-	
-	while(P->T->dado.value != idx) {
-		POP(P, &tmp);
-		PUSH(&aux, tmp);
-		
-	}
-	
-	if(P->T != P->F) {
-		P2 = P->T;
-		P->T = P->T->ant;
-		free(P2);
-	}
-	
-	while(aux.T != aux.F) {
-		POP(&aux, &tmp);
-		PUSH(P, tmp);
-	}
-}
+	return aux;
+};
 
 void Imprimir(Pilha *P) {
 	Bloco *aux;
 	aux = P->T;
 	while(aux->ant != NULL){
-		printf("%d\n", aux->dado.value);
+		printf("(%d,%d)\n", aux->dado.x, aux->dado.y);
 		aux = aux->ant;
 	}
 }

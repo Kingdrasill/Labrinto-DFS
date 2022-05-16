@@ -1,12 +1,15 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
 
 typedef struct Item Item;
 typedef struct Bloco Bloco;
 typedef struct Pilha Pilha;
 
 struct Item{
-	int value;
+	int x;
+	int y;
 };
 
 struct Bloco{
@@ -23,8 +26,6 @@ void FPVazia(Pilha *P);
 
 void PUSH(Pilha *P, Item D);
 
-void POP(Pilha *P, Item *D);
-
-void Remove(Pilha *P, int idx);
+Item POP(Pilha *P);
 
 void Imprimir(Pilha *P);
