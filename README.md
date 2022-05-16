@@ -10,12 +10,10 @@ Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca
 </p>
 
 <p align="justify">
-  A estrutua da matriz é possui um tamanho, uma largura e qual o dado de cada posição da matriz. Está irá representar um labirinto de tamanho n e largura m em que cada posição pode ter um dos tipos de dado a seguir:
+  A estrutua da matriz possui um tamanho, uma largura, o dado de cada posição da matriz e as posições que poderá caminhar(Abaixo da posição, à esquerda da posição ou à direita da posição). Esta irá representar um labirinto de tamanho n e largura m em que cada posição pode ter um dos tipos de dado a seguir:
   <ul>
-    <li>"E" - Simboliza a entrada do labirinto, só há uma por labirinto</li>
-    <li>"S" - Simboliza a saída do labirinto, só há uma por labirinto</li>
-    <li>"." - Simboliza um caminho passável no labirinto, só há uma por labirinto</li>
-    <li>"#" - Simboliza uma parede no labirinto, só há uma por labirinto</li>
+    <li>"." - Simboliza um caminho passável no labirinto.</li>
+    <li>"#" - Simboliza uma parede no labirinto.</li>
   </ul>
   E para um labirinto ser válido tem que exister pelo menos um caminho da entrada para o final. O labirinto a seguir é um labirinto 8x8 válido de exemplo, o caminho vermelho representa uma das formas de passar por ele:
 </p>
