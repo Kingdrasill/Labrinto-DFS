@@ -40,7 +40,7 @@ Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca
 </p>
 
 <p align="justify">
-  Exemplo de parada, neste exemplo o algoritmo estava se movendo para baixo e parou na posição (0,7) pois não tinha como ir mais para baixo:
+  Exemplo de parada: O algoritmo moveu-se para baixo e parou na última posição da linha (0,7), não tendo mais para onde seguir.
 </p>
 <p align="center">
   <img src="imgs/parada.png">
