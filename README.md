@@ -47,7 +47,7 @@ Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca
 </p>
 
 <p align="justify">
-  Depois de parar mudar a direção, neste exemplo o algoritmo parou na posição (0,7) como havia nenhum caminho para ir a não ser voltar de onde veio a posição (0,7) é retirada da pilha e verifica-se a posição (0,6) que dá para mover a diretia dela:
+ Ainda no exemplo, depois de parar na posição (0,7), mudou-se a direção. Como não havia nenhum caminho para ir a não ser voltar de onde veio, a posição (0,7) é retirada da pilha e verifica-se a nova posição (0,6) dá para mover a diretia:
 </p>
 <p align="center">
   <img src="imgs/mudar.png">
