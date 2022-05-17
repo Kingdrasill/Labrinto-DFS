@@ -27,14 +27,13 @@ void ImprimirLab(Labirinto *lab) {
 }
 
 int DFS(Labirinto *lab, Pilha *p) {
-    bool cont = true, try = true;
+    bool cont = true;
     Item aux, tmp;
-    int count = -2;
+    int count = 1;
     int x=0, y=0;
 
     while (cont) {
         aux = POP(p);
-        count++;
         x = aux.x;
         y = aux.y;
 
@@ -43,47 +42,37 @@ int DFS(Labirinto *lab, Pilha *p) {
         } else {
             if((x+1) < lab->linha && lab->map[x+1][y].value != '#' && !lab->map[x][y].bottom) {
                 lab->map[x][y].bottom = true;
-                while(try) {
-                    tmp.x = x;
+                tmp.x = x;
+                tmp.y = y;
+                PUSH(p, tmp);
+                if((x+1) < lab->linha && lab->map[x+1][y].value != '#') {
+                    tmp.x = x+1;
                     tmp.y = y;
                     PUSH(p, tmp);
                     count++;
-                    if((x+1) >= lab->linha || lab->map[x+1][y].value == '#') {
-                        try = false;
-                    }
-                    x++;
                 }
-                try =true;
-                x = aux.x;
-                y = aux.y;
             } else if((y+1) < lab->coluna && lab->map[x][y+1].value != '#' && !lab->map[x][y].right) {
                 lab->map[x][y].right = true;
-                while(try) {
-                    aux.x = x;
-                    aux.y = y;
-                    PUSH(p, aux);
+                tmp.x = x;
+                tmp.y = y;
+                PUSH(p, aux);
+                if((y+1) < lab->coluna && lab->map[x][y+1].value != '#') {
+                    tmp.x = x;
+                    tmp.y = y+1;
+                    PUSH(p, tmp);
                     count++;
-                    if((y+1) >= lab->coluna || lab->map[x][y+1].value == '#') {
-                        try = false;
-                    }
-                    y++;
                 }
-                try =true;
-                x = aux.x;
-                y = aux.y;
             } else if((y-1) > 0 && lab->map[x][y-1].value != '#' && !lab->map[x][y].left) {
                 lab->map[x][y].left = true;
-                while(try) {
-                    aux.x = x;
-                    aux.y = y;
-                    PUSH(p, aux);
+                tmp.x = x;
+                tmp.y = y;
+                PUSH(p, aux);
+                if((y-1) > 0 && lab->map[x][y-1].value != '#') {
+                    tmp.x = x;
+                    tmp.y = y-1;
+                    PUSH(p, tmp);
                     count++;
-                    if((y-1) < 0 || lab->map[x][y-1].value == '#') {
-                        try = false;
-                    }
-                    y--;
                 }
-                try =true;
             } else {
                 lab->map[x][y].bottom = true;
                 lab->map[x][y].right = true;
