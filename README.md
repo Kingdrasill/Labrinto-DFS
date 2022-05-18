@@ -71,7 +71,11 @@ Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca
 
 <h5>Interações</h5>
 
-<p>As interações são definidas pela função DFS, sendo tratadas apenas pela inserções dentro da pilha. Após conferir cada posição possível para prosseguir, ao acrescentar a posição a pilha, imediatamente é acrescentado 1 a variável count resultando no valor total de interações necessárias para concluir o caminho. não foi considerado as interações de retirada na pilha (considerado como voltar no caminho) já que teoricamente estariamos acrescentando a mesmo posição duas vezes (ida e volta). </p>
+<p>As interações são definidas pela função DFS, sendo tratadas apenas pela inserções dentro da pilha. Após conferir cada posição possível para prosseguir, ao acrescentar a posição a pilha, imediatamente é acrescentado 1 a variável count resultando no valor total de interações necessárias para concluir o caminho. não foi considerado as interações de retirada na pilha (considerado como voltar no caminho) já que teoricamente estariamos acrescentando a mesmo posição duas vezes (ida e volta).</p>
+
+<h3>main.c</h3>
+
+<p>No main, inicializamos a pilha vazia e chamos o PUSH (Empilhar) e em seguida pedimos ao usuário o número de linhas e colunas do labirinto disponível no arquivo e consequentemente pedimos o nome do arquivo com a extensão. Inicializamos o labirinto e a leitura do arquivo, para conferir se a leitura esta correta, imprimos o labirinto para questões de comparação (caso o usuário queira conferir o resultado) e atribuimos a variavél iteracoes a função DFS e mostramos o resultado final de interações. Finalizamos a pilha e o labirinto no final.</p>
 
 # Compilação e Execução
 
@@ -83,3 +87,6 @@ A lista dinâmica disponibilizada possui um arquivo Makefile que realiza todo o 
 |  `make clean`          | Apaga a última compilação realizada contida na pasta build                                        |
 |  `make`                | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build           |
 |  `make run`            | Executa o programa da pasta build após a realização da compilação                                 |
+
+
+<p>Trabalho realizado Gabriel Júnior Teixeira e Lívia Gonçalves - Maio/2022</p>
