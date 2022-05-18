@@ -60,6 +60,13 @@ Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca
   <img src="imgs/exemploresultado.png">
 </p>
 
+# Algoritmo
+<h3>Pilha.h e Pilha.c</h3>
+<p>Nessa estrutura temos a função PUSH e POP (Empilhar e Desempilhar respectivamente), a função FPVazia, que inicializa a pilha vazia e aloca a memória do tamanho do bloco, e a função imprimir, que imprime os valores obtidos na pilha. </p>
+
+<h3>labirinto.h e labirinto.c</h3>
+<p> </p>
+
 # Compilação e Execução
 
 A lista dinâmica disponibilizada possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
