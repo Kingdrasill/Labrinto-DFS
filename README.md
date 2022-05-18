@@ -65,7 +65,13 @@ Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca
 <p>Nessa estrutura temos a função PUSH e POP (Empilhar e Desempilhar respectivamente), a função FPVazia, que inicializa a pilha vazia e aloca a memória do tamanho do bloco, e a função imprimir, que imprime os valores obtidos na pilha. </p>
 
 <h3>labirinto.h e labirinto.c</h3>
-<p> </p>
+<p> Utilizou-se as estruturas Cell e Labirinto para a criação da matriz e análise das posições ao caminhar no labirinto. As funções inicializar e finalizar se refere a inicialização e finalização do labirinto. Com isso, é possivel imprimir o mesmo ultilizando a função ImprimirLab.</p>
+
+<p>A função LerArquivo permite a leitura de arquivo em que está inserido o labirinto. Para a realização da leitura correta é necessário que o labirinto seja descrito com "." como passagem/caminho livre e "#" como a parede que impede de seguir o caminho, além disso é preciso inserir o nome do arquivo com sua extensão para evitar erros. </p>
+
+<h1>Interações</h1>
+
+<p></p>
 
 # Compilação e Execução
 
