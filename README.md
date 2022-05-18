@@ -61,7 +61,7 @@ Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca
 </p>
 
 # Algoritmo
-<h3>Pilha.h e Pilha.c</h3>
+<h3>pilha.h e pilha.c</h3>
 <p>Nessa estrutura temos a função PUSH e POP (Empilhar e Desempilhar respectivamente), a função FPVazia, que inicializa a pilha vazia e aloca a memória do tamanho do bloco, e a função imprimir, que imprime os valores obtidos na pilha. </p>
 
 <h3>labirinto.h e labirinto.c</h3>
