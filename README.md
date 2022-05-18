@@ -69,7 +69,7 @@ Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca
 
 <p>A função LerArquivo permite a leitura de arquivo em que está inserido o labirinto. Para a realização da leitura correta é necessário que o labirinto seja descrito com "." como passagem/caminho livre e "#" como a parede que impede de seguir o caminho, além disso é preciso inserir o nome do arquivo com sua extensão para evitar erros. </p>
 
-<h5>Interações</h5>
+    <h5>Interações</h5>
 
 <p>As interações são definidas pela função DFS, sendo tratadas apenas pela inserções dentro da pilha. Após conferir cada posição possível para prosseguir, ao acrescentar a posição a pilha, imediatamente é acrescentado 1 a variável count resultando no valor total de interações necessárias para concluir o caminho. não foi considerado as interações de retirada na pilha (considerado como voltar no caminho) já que teoricamente estariamos acrescentando a mesmo posição duas vezes (ida e volta).</p>
 
