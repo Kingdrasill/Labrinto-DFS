@@ -6,7 +6,7 @@
 </div>
 
 <p align="justify">
-Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca ou travsseia em árvores, mas pode ser aplicado em outros casos também. Um desses casos é em matrizes, que podem ser labirintos, para chegar de uma determinada posição inicial até uma determindada posição final, em labirintos essas seriam a entrada e saída dele. Para este algoritmo há duas estruturas importantes a matriz que é o labirinto e a pilha dinâmica que guarda o caminho percorrido.
+Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca ou travessia em árvores, mas pode ser aplicado em outros casos também. Um desses casos é em matrizes, que podem ser labirintos, para chegar de uma determinada posição inicial até uma determindada posição final, em labirintos essas seriam a entrada e saída dele. Para este algoritmo há duas estruturas importantes a matriz que é o labirinto e a pilha dinâmica que guarda o caminho percorrido.
 </p>
 
 <p align="justify">
@@ -22,7 +22,7 @@ Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca
 </p>
 
 <p align="justify">
-  A estrutura pilha dinâmica será utilizada para guardar o caminho tomado da entrada para chegar na saída. A pilha dinâmica é uma variante do modelo de pilha estática, onde há um ponteiro que aponta para o topo da pilha, um ponteiro que aponta para o fundo da pilha e os dados que possuem um valor que é passado para chegar nele. A estrutura pode ser vista pela visualização gráfica abaixo:  
+  A estrutura pilha dinâmica, [vide git](<a href="https://github.com/mpiress/dynamic_stack">https://github.com/mpiress/dynamic_stack</a>), será utilizada para guardar o caminho tomado da entrada para chegar na saída. A pilha dinâmica é uma variante do modelo de pilha estática, onde há um ponteiro que aponta para o topo da pilha, um ponteiro que aponta para o fundo da pilha e os dados que possuem um valor que é passado para chegar nele. A estrutura pode ser vista pela visualização gráfica abaixo:  
 </p>
 <p align="center">
   <img src="imgs/pilha.png">
@@ -93,4 +93,4 @@ A lista dinâmica disponibilizada possui um arquivo Makefile que realiza todo o 
 |  `make run`            | Executa o programa da pasta build após a realização da compilação                                 |
 
 
-<p>Trabalho realizado Gabriel Júnior Teixeira e Lívia Gonçalves - Maio/2022</p>
+<p>Trabalho realizado Gabriel Teixeira Júlio e Lívia Gonçalves - Maio/2022</p>
