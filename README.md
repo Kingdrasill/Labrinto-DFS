@@ -62,12 +62,12 @@ Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca
 
 # Algoritmo
 <h3>pilha.h e pilha.c</h3>
-<p>Nessa estrutura temos a função PUSH e POP (Empilhar e Desempilhar respectivamente), a função FPVazia, que inicializa a pilha vazia e aloca a memória do tamanho do bloco, e a função imprimir, que imprime os valores obtidos na pilha. </p>
+<p align="justify">Nessa estrutura temos a função PUSH e POP (Empilhar e Desempilhar respectivamente), a função FPVazia, que inicializa a pilha vazia e aloca a memória do tamanho do bloco, e a função imprimir, que imprime os valores obtidos na pilha. </p>
 
 <h3>labirinto.h e labirinto.c</h3>
-<p> Utilizou-se as estruturas Cell e Labirinto para a criação da matriz e análise das posições ao caminhar no labirinto. As funções inicializar e finalizar se refere a inicialização e finalização do labirinto. Com isso, é possivel imprimir o mesmo ultilizando a função ImprimirLab.</p>
+<p align="justify"> Utilizou-se as estruturas Cell e Labirinto para a criação da matriz e análise das posições ao caminhar no labirinto. As funções inicializar e finalizar se refere a inicialização e finalização do labirinto. Com isso, é possivel imprimir o mesmo ultilizando a função ImprimirLab.</p>
 
-<p>A função LerArquivo permite a leitura de arquivo em que está inserido o labirinto. Para a realização da leitura correta é necessário que o labirinto seja descrito no formato de matriz e considerando "." como passagem/caminho livre e "#" como a parede que impede de seguir o caminho, além disso é preciso inserir o nome do arquivo com sua extensão para evitar erros. Veja o exemplo a seguir: </p>
+<p align="justify">A função LerArquivo permite a leitura de arquivo em que está inserido o labirinto. Para a realização da leitura correta é necessário que o labirinto seja descrito no formato de matriz e considerando "." como passagem/caminho livre e "#" como a parede que impede de seguir o caminho, além disso é preciso inserir o nome do arquivo com sua extensão para evitar erros. Veja o exemplo a seguir: </p>
 
 <p align="center">
   <img src="imgs/exemplolabirintotxt.png">
@@ -79,7 +79,7 @@ Busca em Profundidade é um algoritmo normalmente ultilizado para realizar busca
 
 <h3>main.c</h3>
 
-<p>No main, inicializamos a pilha vazia e chamos o PUSH (Empilhar) e em seguida pedimos ao usuário o número de linhas e colunas do labirinto disponível no arquivo e consequentemente pedimos o nome do arquivo com a extensão. Inicializamos o labirinto e a leitura do arquivo, para conferir se a leitura esta correta, imprimos o labirinto para questões de comparação (caso o usuário queira conferir o resultado) e atribuimos a variavél iteracoes a função DFS e mostramos o resultado final de interações. Finalizamos a pilha e o labirinto no final.</p>
+<p align="justify">No main, inicializamos a pilha vazia e chamos o PUSH (Empilhar) e em seguida pedimos ao usuário o número de linhas e colunas do labirinto disponível no arquivo e consequentemente pedimos o nome do arquivo com a extensão. Inicializamos o labirinto e a leitura do arquivo, para conferir se a leitura esta correta, imprimos o labirinto para questões de comparação (caso o usuário queira conferir o resultado) e atribuimos a variavél iteracoes a função DFS e mostramos o resultado final de interações. Finalizamos a pilha e o labirinto no final.</p>
 
 # Compilação e Execução
 
